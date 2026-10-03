@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful moments</p>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="mountain">Mountain</button>
+    </div>
+
+    <main class="gallery">
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature.jpg" alt="Nature">
+        </div>
+
+        <div class="gallery-item" data-category="beach">
+            <img src="images/beach.jpg" alt="Beach">
+        </div>
+
+        <div class="gallery-item" data-category="mountain">
+            <img src="images/mountain.jpg" alt="Mountain">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/lake.jpg" alt="lake">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/forest.jpg" alt="Forest">
+        </div>
+
+        <div class="gallery-item" data-category="nature">
+            <img src="images/sunset.jpg" alt="Sunset">
+        </div>
+    </main>
+
+    <!--- lightbox --->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="close">&times;</button>
+        <button class="prev" id="prev">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Preview">
+        <button class="next" id="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
